@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meca</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="manifest" href="./manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="PWAGram" />
+    <link
+      rel="apple-touch-icon"
+      href="./img/icons/logo/app-icon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./img/icons/logo/app-icon-512x512.png"
+      sizes="512x512"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/icons/app-icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="theme-color" content="#3f51b5" /> -->
+  </head>
+  <body data-barba="wrapper">
+    <header class="menus_Header">
+      <div class="wrapper">
+        <img src="./img/logos/meca.svg" alt="meca logo" class="right" />
+        <span>Déconnexion</span>
+        <img src="./img/logos/user.svg" alt="meca logo" />
+      </div>
+    </header>
+
+    <!-- A propos -->
+
+    <main
+      data-barba="container"
+      data-barba-namespace="test"
+      class="blue"
+      style="height: 100vh; width: 100vw"
+    >
+      <div class="router theme darkBlue"></div>
+      <div class="main_wrapper">
+        <div class="thematique">
+          <ul>
+            <li>
+              <a href="page4.html" value="Restauration"> Restauration </a>
+            </li>
+            <li>
+              <a href="page4.html" value="Vente">
+                <span>Vente</span>
+              </a>
+            </li>
+            <li>
+              <a href="page4.html" value="Nettoyage">
+                <span>Nettoyage</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="page4.html"
+                value="Une thématique est ici et est plus longue"
+              >
+                <span>Bâtiment</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Impressum -->
+        <div class="impressum_container headerFixer">
+          <h2>Impressum</h2>
+          <div>
+            <span>Développement</span>
+            <span>Laurent Hermann</span>
+          </div>
+          <div>
+            <span>Graphisme</span>
+            <span>Claude Baconnat</span>
+          </div>
+          <div>
+            <span>Design UX/UI</span>
+            <span>Anthony Babin</span>
+          </div>
+          <div>
+            <span>Développement modules</span>
+            <span
+              >Huy Tran-Nhu, Halit Mislimi, Raoul Perez, Antoine Belsoeur, Steve
+              Aguet
+            </span>
+          </div>
+          <div>
+            <span>Encadrement technique</span>
+            <span>Olivier Dommange</span>
+          </div>
+          <div>
+            <span>Contenus</span>
+            <span>Yohann Rebors</span>
+          </div>
+          <div>
+            <span>Remerciement pour leur participation</span>
+            <span>Myriam Forgeron, Swen Teba, Stéphane Nanga</span>
+          </div>
+          <span id="close_impressum">Fermer</span>
+        </div>
+
+        <div id="footer" class="wrapper fixed">
+          <span class="impressum">Impressum</span>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/@barba/css"></script>
+    <script type="module" src="./js/page2/app.js"></script>
+    <script type="module" src="./js/page3/app.js"></script>
+  </body>
+</html>

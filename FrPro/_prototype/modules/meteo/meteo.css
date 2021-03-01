@@ -1,0 +1,197 @@
+/* COLORS */
+:root {
+  --sky-blue: #cde0fc;
+  --blue: #116eee;
+  --darkBlue: #003682;
+  --svg-border: #116eee;
+  --purple: #501755;
+  --light-purple: #ecdbee;
+}
+
+/* STYLES  */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  height: calc(100vh - 100px);
+  margin: 0 auto;
+  width: 100%;
+  overflow: scroll;
+  position: relative;
+  /* hide scroll bar */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* hide scroll bar */
+.question::-webkit-scrollbar {
+  display: none;
+}
+.question h1 {
+  color: #0e97ee !important;
+}
+
+.soundContainer {
+  width: 75px;
+  height: 75px;
+  margin: 15px;
+  background: rgba(238, 5, 36, 0.184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999999;
+}
+
+#audio {
+  visibility: hidden;
+}
+
+#audio-1 {
+  visibility: hidden;
+}
+
+.run-animation {
+  animation: audio 0.5s ease-in;
+}
+
+.run-animation2 {
+  animation: audio-wave 2s infinite ease-in-out;
+}
+
+@keyframes audio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes audio-wave {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.dropZone {
+  background: white;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  transition: 400ms;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropZone .images {
+  min-width: 160px;
+  min-height: 160px;
+  margin: auto 20px;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none;
+}
+
+.sweet {
+  width: auto;
+  display: flex;
+  height: 200px;
+  overflow-x: scroll;
+  cursor: grab;
+  /* hide scroll bar */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* hide scroll bar */
+.sweet::-webkit-scrollbar {
+  display: none;
+}
+
+.sweet .images {
+  min-width: 160px;
+  min-height: 160px;
+  margin: auto 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 400ms;
+}
+
+.soleil {
+  background-image: url('../images/modules/meteo/soleil.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.eclair {
+  background-image: url('../images/modules/meteo/eclair-soleil.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.nuages {
+  background-image: url('../images/modules/meteo/nuages.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.pluie {
+  background-image: url('../images/modules/meteo/pluie.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.nuages-soleil {
+  background-image: url('../images/modules/meteo/nuage-soleil.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.dragging {
+  min-width: 160px;
+  min-height: 160px;
+  margin: auto 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  border: 3px solid #003682;
+  box-sizing: border-box;
+  transition: transform 400ms;
+}
+
+.over {
+  width: 98%;
+  border: 5px dashed #116eee;
+  border-radius: 3px;
+}

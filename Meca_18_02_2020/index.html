@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meca</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Meca" />
+    <link
+      rel="apple-touch-icon"
+      href="./img/icons/logo/app-icon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./img/icons/logo/app-icon-512x512.png"
+      sizes="512x512"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/icons/app-icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="theme-color" content="#3f51b5" />
+  </head>
+  <body>
+    <div class="container darkBlue">
+      <div id="propos">
+        <div class="footerWrapper">
+          <a id="close" class="right">Fermer</a>
+          <br />
+          <h2>Site Mesures et calculs</h2>
+
+          <p>
+            Les difficultés que rencontrent bien des personnes dans le
+            traitement de l’information quantitative, que ce soit la réalisation
+            d’un calcul arithmétique ou la résolution d’un problème, sont de
+            mieux en mieux identifiées comme des freins à une bonne insertion
+            professionnelle ou sociale. Ainsi, le SECO promeut l’acquisition de
+            compétences de bases dans ce domaine pour les demandeurs d’emploi.
+            Voir par exemple le concept pour la promotion des compétences en
+            numératie
+          </p>
+          <br />
+
+          <p>
+            Emploi Lausanne organise dans le cadre de ses mesures d’insertion
+            professionnelles et sociales un atelier de formation « Mesures et
+            calculs » dont ce site est un élément central.
+          </p>
+          <br />
+
+          <p>
+            Ce site constitue fondamentalement un outil pour améliorer
+            l’interaction entre l’apprenant/e et le/la formateur/trice. Malgré
+            la mise à disposition de « Cours » il ne permet pas un apprentissage
+            totalement autonome des sujets abordés. Il permettra cependant à
+            l’utilisateur d’augmenter son degré d’autonomie dans l’acquisition
+            des savoirs visés. C’est du moins notre souhait et l’un des
+            principaux objectifs que nous cherchons à atteindre
+          </p>
+          <br />
+
+          <p>
+            C’est avec plaisir que nous offrons l’accès à ce site à toutes les
+            personnes, groupes ou institutions qui pourraient y trouver de quoi
+            alimenter leurs propres démarches de formation et apprentissage.
+          </p>
+          <br />
+
+          <p>
+            C’est avec intérêt et reconnaissance que nous accueillerons toute
+            remarque nous permettant de l’améliorer et de le compléter.
+          </p>
+          <br />
+
+          <p>Le chef de l’unité SPS</p>
+          <br />
+          <p><b>Tomas Lopez</b></p>
+          <br />
+
+          <p>Signature</p>
+          <br />
+          <a id="close">Fermer</a>
+        </div>
+      </div>
+      <header class="menus_Header">
+        <div class="wrapper">
+          <img src="./img/logos/meca.svg" alt="meca logo" class="right" />
+          <a href="https://www.emploilausanne.ch/" target="_blank">
+            <img src="./img/logos/el.svg" alt="emploi lausanne" />
+          </a>
+        </div>
+      </header>
+      <main class="wrapper">
+        <div class="main_wrapper homepage">
+          <h1>Bienvenue sur mesures et calculs</h1>
+          <span
+            >Un outil de formation sur l'application des calculs dans le milieu
+            professionnel.</span
+          >
+
+          <form id="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Adresse e-mail"
+              autocomplete="off"
+              required
+            />
+            <button class="blade" type="submit">Connexion</button>
+          </form>
+        </div>
+
+        <!-- Impressum -->
+        <div class="impressum_container" style="top: 95px">
+          <h2>Impressum</h2>
+          <div>
+            <span>Développement</span>
+            <span>Laurent Hermann</span>
+          </div>
+          <div>
+            <span>Graphisme</span>
+            <span>Claude Baconnat</span>
+          </div>
+          <div>
+            <span>Design UX/UI</span>
+            <span>Anthony Babin</span>
+          </div>
+          <div>
+            <span>Développement modules</span>
+            <span
+              >Huy Tran-Nhu, Halit Mislimi, Raoul Perez, Antoine Belsoeur, Steve
+              Aguet
+            </span>
+          </div>
+          <div>
+            <span>Encadrement technique</span>
+            <span>Olivier Dommange</span>
+          </div>
+          <div>
+            <span>Contenus</span>
+            <span>Yohann Rebors</span>
+          </div>
+          <div>
+            <span>Remerciement pour leur participation</span>
+            <span>Myriam Forgeron, Swen Teba, Stéphane Nanga</span>
+          </div>
+          <span id="close_impressum">Fermer</span>
+        </div>
+      </main>
+
+      <div id="footer" class="fixed">
+        <div class="wrapper">
+          <span class="propos">À propos de</span>
+          <span class="impressum">Impressum</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      const form = document.querySelector("#form");
+      const email = document.getElementById("email");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (email.value) window.location = "page2.html";
+      });
+    </script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

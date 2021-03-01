@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fr Pro | Nombres V3</title>
+    <script src="../../../js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="../../../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../js/lib/dragula.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <div class="screen exercice screen-display">
+
+        <div class="container">
+            <header>
+                <progress max="100" value="40"></progress>
+            </header>
+
+            <main>
+                <section class="exercice">
+
+                    <div class="question">
+                        <div class="soundContainer">
+                            <audio>
+                                <source src="../../../medias/modules/meteo/0120.mp3" type="audio/mpeg">
+                            </audio>
+                            <svg id="audioSvg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384"
+                                fill="purple" height="35px" width="35px" xml:space="preserve">
+                                <polygon points="0,128 0,256 85.333,256 192,362.667 192,21.333 85.333,128 			" />
+                                <path id="audio"
+                                    d="M288,192c0-37.653-21.76-70.187-53.333-85.867v171.84C266.24,262.187,288,229.653,288,192z" />
+                                <path id="audio-1" d="M234.667,4.907V48.96C296.32,67.307,341.333,124.373,341.333,192S296.32,316.693,234.667,335.04v44.053
+                       C320.107,359.68,384,283.413,384,192S320.107,24.32,234.667,4.907z" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="dropzone flex">
+                        <div class="number flex"></div>
+                    </div>
+
+
+
+                    <div class="answers">
+
+                        <div class="number flex">154</div>
+                        <div class="number flex">552</div>
+
+                        <div class="number flex">1987</div>
+                        <div class="number flex">87</div>
+
+                        <div class="number flex">986</div>
+                        <div class="number flex">54</div>
+
+
+                        <div class="number flex">456</div>
+                        <div class="number flex">78</div>
+
+                        <div class="number flex">777</div>
+                        <div class="number flex">26</div>
+
+                        <div class="number flex">18</div>
+                        <div class="number flex">34</div>
+
+                        <div class="number flex">9854</div>
+                        <div class="number flex">1235</div>
+
+                        <div class="number flex">698</div>
+                        <div class="number flex">999</div>
+                    </div>
+        </div>
+
+
+
+        </section>
+
+
+        <section class="exercice hide">
+
+            <div class="question">
+                <h1>Les chiens n'aiment pas les chats ?</h1>
+            </div>
+
+            <div class="answers">
+                <button>Vrai</button>
+                <button>Faux</button>
+            </div>
+
+        </section>
+
+
+        <section class="exercice hide">
+
+            <div class="question">
+                <h1>La vangeance est un plat qui se mange...</h1>
+            </div>
+
+            <div class="answers">
+                <button>Froid</button>
+                <button>Chaud</button>
+            </div>
+
+        </section>
+
+
+        <section class="result hide">
+
+            <div class="text">
+                <h1>Bravo !</h1>
+            </div>
+
+            <div class="results">
+                <span>3/3</span>
+            </div>
+
+        </section>
+        </main>
+
+        <footer>
+            <nav class="swiper">
+                <div>
+                    <button data-action="next">Suivant</button>
+                    <button data-action="stop">Arrêter</button>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    </div>
+
+    <script defer src="../../../js/lib/dragula.min.js"></script>
+    <script defer src="../slider.js"></script>
+    <script defer src="../audio.js"></script>
+    <script defer src="./app.js"></script>
+
+</body>
+
+</html>

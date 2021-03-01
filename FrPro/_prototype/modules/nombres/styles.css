@@ -1,0 +1,116 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropzone {
+  background: white;
+  height: 400px;
+  transition: 300ms;
+}
+
+.answers {
+  width: auto;
+  display: flex;
+  overflow: scroll;
+  cursor: grab;
+
+  /* hide scroll bar */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scroll bar */
+.answers::-webkit-scrollbar {
+  display: none;
+}
+
+.number {
+  min-width: 166px;
+  min-height: 166px;
+  border-radius: 50%;
+  background: #116eee;
+  margin: 10px;
+
+  padding: 7px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.selected {
+  border: 3px solid #116eee;
+  background: #116eee;
+  background-clip: content-box;
+}
+
+.soundContainer {
+  width: 75px;
+  height: 75px;
+  margin: 15px;
+  background: rgba(238, 5, 36, 0.184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+  z-index: 9999999;
+}
+
+#audio {
+  visibility: hidden;
+}
+
+#audio-1 {
+  visibility: hidden;
+}
+
+.run-animation {
+  animation: audio 0.5s ease-in;
+}
+
+.run-animation2 {
+  animation: audio-wave 2s infinite ease-in-out;
+}
+
+@keyframes audio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes audio-wave {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.over {
+  width: 98%;
+  border: 5px dashed #116eee;
+  border-radius: 3px;
+}

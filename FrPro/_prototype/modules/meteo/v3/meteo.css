@@ -1,0 +1,175 @@
+:root {
+  --sky-blue: #cde0fc;
+  --blue: #116eee;
+  --darkBlue: #003682;
+  --svg-border: #116eee;
+  --purple: #501755;
+  --light-purple: #ecdbee;
+}
+
+#container {
+  max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.mapContainer {
+  height: calc(100vh - 105px);
+  width: auto;
+  position: relative;
+}
+
+.soundContainer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 75px;
+  height: 75px;
+  margin: 15px;
+  background: #ecdbee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 999999;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+#audio {
+  visibility: hidden;
+}
+
+#audio-1 {
+  visibility: hidden;
+}
+
+.run-animation {
+  animation: audio 0.5s ease-in;
+}
+
+.run-animation2 {
+  animation: audio-wave 2s infinite ease-in-out;
+}
+
+@keyframes audio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes audio-wave {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.svgContainer {
+  height: calc(100vh - 220px);
+  width: 100%;
+  overflow: scroll;
+  cursor: grab;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.svgContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.map {
+  width: 830px;
+  height: 644;
+}
+
+.items {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 0 50px;
+  display: flex;
+  height: 120px;
+  overflow-x: scroll;
+  cursor: grab;
+  background-color: white;
+
+  /* hide scroll bar */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scroll bar */
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  min-width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 15px auto auto;
+  background: var(--sky-blue);
+  padding: 3px;
+}
+
+.selected {
+  border: 3px solid var(--blue);
+  background: var(--blue);
+  background-clip: content-box;
+}
+
+.newEl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.meteo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid var(--darkBlue);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.newEl span {
+  font-size: 16px;
+  height: auto;
+  margin-top: 5px;
+  padding: 3px 25px;
+  border-radius: 100px;
+  background: var(--darkBlue);
+  color: white;
+}

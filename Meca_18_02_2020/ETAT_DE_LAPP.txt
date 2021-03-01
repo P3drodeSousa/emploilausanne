@@ -1,0 +1,15 @@
+Tout les fichiers se trouvant ci-dessus devretont être utilises comme "inspiration" pour la réalisation de la version définitive.
+Le but des ces fichier été de tester l'interface visuel.
+Le dossier _sandbox a comme propos de tester du code. (il n'est pas vital pour le fonctionement de l'app)
+Concernant les transitions entre les pages je vous conseiller de lire la documentation de la librairie utilise pour comprendre le fonctionnement de celle-ci.
+
+
+
+Librairies utilisés : 
+	- dragula js (drag n'drop)
+	- barba js (transitions entre les pages)
+
+
+API utilises : 
+	- speech synthesis (Api navigateur) (lit le text a haut voix)
+
